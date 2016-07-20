@@ -49,9 +49,9 @@ var App = React.createClass({
 
     return (
       <div>
-        <h2>A) Basic types (info, warning, error, [none])</h2>
+        <h2>Basic types (info, warning, error, [none])</h2>
         <Alerts items={types} />
-        <h2>B) No content provided (info, warning, error, [none])</h2>
+        <h2>No content provided (info, warning, error, [none])</h2>
         <Alerts items={onlyHeadings} />
       </div>
     );
