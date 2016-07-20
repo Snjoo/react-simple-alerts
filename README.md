@@ -56,7 +56,7 @@ const items = [
 	}
 ];
 
-<Alerts items={items}></Alerts>
+<Alerts items={items} />
 ```
 
 ### Properties
