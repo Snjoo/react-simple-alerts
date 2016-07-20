@@ -4,6 +4,8 @@ Display an array of informative messages to end-user.
 
 Each alert has a heading, content and a type.
 
+![./example.png](example.png)
+
 ## Demo & Examples
 
 Live demo: [thevangelist.github.io/react-simple-alerts](http://thevangelist.github.io/react-simple-alerts/)
