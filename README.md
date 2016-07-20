@@ -61,7 +61,18 @@ const items = [
 
 ### Properties
 
-* Items: Array of alerts to display for the user.
+**items (*array*)**
+The array of messages each composed of:
+
+**heading (*string*, required)**
+Heading text of the message
+
+**content (*string*, optional)**
+Content which further explains the title
+
+**type (*string*, optional)**
+("info"|"warning"|"error"|"")
+
 
 ### Notes
 
