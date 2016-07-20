@@ -1,6 +1,8 @@
 # Alerts
 
-Alerts component to display a array of informational messages to user.
+Display an array of informative messages to end-user.
+
+Each alert has a heading, content and a type.
 
 ## Demo & Examples
 
