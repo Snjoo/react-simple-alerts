@@ -1,0 +1,29 @@
+{
+  "name": "react-simple-alerts",
+  "version": "0.0.0",
+  "description": "Alerts",
+  "main": "dist/react-simple-alerts.min.js",
+  "homepage": "https://github.com/thevangelist/react-simple-alerts",
+  "authors": [
+    "Esa Juhana Lahikainen"
+  ],
+  "moduleType": [
+    "amd",
+    "globals",
+    "node"
+  ],
+  "keywords": [
+    "react",
+    "react-component"
+  ],
+  "license": "MIT",
+  "ignore": [
+    ".editorconfig",
+    ".gitignore",
+    "package.json",
+    "src",
+    "node_modules",
+    "example",
+    "test"
+  ]
+}
