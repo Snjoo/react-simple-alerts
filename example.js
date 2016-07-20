@@ -46,13 +46,13 @@ var App = React.createClass({
       React.createElement(
         'h2',
         null,
-        'A) Basic types (info, warning, error, [none])'
+        'Basic types (info, warning, error, [none])'
       ),
       React.createElement(Alerts, { items: types }),
       React.createElement(
         'h2',
         null,
-        'B) No content provided (info, warning, error, [none])'
+        'No content provided (info, warning, error, [none])'
       ),
       React.createElement(Alerts, { items: onlyHeadings })
     );
