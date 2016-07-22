@@ -1,7 +1,7 @@
-var React = require('react');
-var Radium = require('radium');
+import React from 'react';
+import Radium from 'radium';
 
-var s = {
+const s = {
   alerts: {
     padding: 0,
     marginBottom: '2em',
@@ -39,9 +39,9 @@ var s = {
   },
 };
 
-class Alerts extends React.Component {
+const Alerts = ({items}) => {
 
-  getAlertClassName(type, styles) {
+  const getAlertClassName = (type) => {
     switch (type) {
       case 'info':
         return s.alerts.info;
@@ -52,25 +52,20 @@ class Alerts extends React.Component {
       default:
         return;
     }
-  }
+  };
 
-  render() {
-
-    const {items} = this.props;
-
-    return (
-      <ul style={s.alerts}>
-        {items && items.length > 0 && items.map((row, i) => {
-          return (
-            <li style={[s.alerts.alert, this.getAlertClassName(row.type, s)]} key={i} >
-              <span style={s.alerts.alert.heading}>{row.heading}</span>
-              <p style={s.alerts.alert.content}>{row.content}</p>
-            </li>
-          );
-        }) }
-      </ul>
-    );
-  }
-}
+  return (
+    <ul style={s.alerts}>
+      {items && items.length > 0 && items.map((row, i) => {
+        return (
+          <li style={[s.alerts.alert, getAlertClassName(row.type)]} key={i} >
+            <span style={s.alerts.alert.heading}>{row.heading}</span>
+            <p style={s.alerts.alert.content}>{row.content}</p>
+          </li>
+        );
+      }) }
+    </ul>
+  );
+};
 
 module.exports = Radium(Alerts);
